@@ -14,47 +14,16 @@
   </head>
   <body>
     <video
-      src="cozy.webm"
+      src="assets/cozy.webm"
       id="myVideo"
       preload="auto"
       autoplay
       loop
       muted
     ></video>
-    <script>
-      const video = document.getElementById("myVideo");
-      let currentSrc = "cozy.webm";
-      let newSrc;
-
-      function setVideoSource(weather, hour) {
-        if (hour >= 6 && hour < 18) {
-          newSrc = weather.includes("Clear") ? "morning.webm" : "raining.webm";
-        } else {
-          newSrc = weather.includes("Clear") ? "cozy.webm" : "rainy night.webm";
-        }
-        // console.log({ currentSrc, newSrc });
-        if (currentSrc !== newSrc) {
-          video.src = newSrc;
-          currentSrc = newSrc;
-        }
-      }
-
-      async function fetchWeather() {
-        try {
-          const response = await fetch(
-            "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={your_api_key}"
-          );
-          const data = await response.json();
-          const weather = data.weather[0].main;
-          const now = new Date();
-          const hour = now.getHours();
-          setVideoSource(weather, hour);
-        } catch (error) {
-          console.error("weather data error ", error);
-        }
-      }
-      fetchWeather();
-      setInterval(fetchWeather, 60000);
-    </script>
+    <script src="js/settings.js"></script>
+    <script src="js/timeWeatherCycle.js"></script>
+    <!-- <script src="js/focusPlay.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>
