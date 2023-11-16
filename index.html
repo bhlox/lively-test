@@ -1,29 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      body {
-        margin: 0;
-        overflow: hidden;
-      }
-      video {
-        width: 100%;
-        height: 100%;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/styles.css" />
   </head>
-  <body>
-    <video
-      src="assets/cozy.webm"
-      id="myVideo"
-      preload="auto"
-      autoplay
-      loop
-      muted
-    ></video>
+  <body style="position: relative">
+    <video src="assets/loading.webm" id="loading" autoplay loop muted></video>
+    <video src="assets/cozy.webm" id="mainVideo" autoplay loop muted></video>
     <script src="js/settings.js"></script>
     <script src="js/timeWeatherCycle.js"></script>
-    <!-- <script src="js/focusPlay.js"></script> -->
+    <script src="js/focusPlay.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

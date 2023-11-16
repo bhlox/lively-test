@@ -3,18 +3,18 @@
     "text": "API Key",
     "help": "Enter your openweathermap API Key",
     "type": "textbox",
-    "value": "openweathermap.org key"
+    "value": ""
   },
   "latLocation": {
     "text": "lat",
     "help": "Enter your latitude location",
     "type": "textbox",
-    "value": "latitude"
+    "value": ""
   },
   "lonLocation": {
     "text": "lon",
     "help": "Enter your longitude location",
     "type": "textbox",
-    "value": "longitude"
+    "value": ""
   }
 }

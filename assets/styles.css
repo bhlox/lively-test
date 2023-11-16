@@ -1,0 +1,32 @@
+body {
+  margin: auto;
+  overflow: hidden;
+}
+video {
+  width: auto;
+  height: 100vh;
+}
+.fade-out {
+  animation: fadeOut ease 2s forwards;
+  position: absolute;
+}
+.fade-in {
+  animation: fadeIn ease 2s forwards;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

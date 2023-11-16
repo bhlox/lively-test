@@ -1,0 +1,12 @@
+{
+  "AppVersion": "0.0.1.0",
+  "Title": "Farm Weather cycles",
+  "Desc": "With time and weather cycles",
+  "Author": "Kurk Villanueva",
+  "Thumbnail": "thumbnail.jpg",
+  "License": null,
+  "Contact": "https://github.com/bhlox",
+  "Type": 1,
+  "FileName": "index.html",
+  "Arguments": "--pause-event true"
+}

@@ -7,4 +7,4 @@ const config = {
 };
 
 fetchWeather();
-setInterval(fetchWeather, 5000);
+setInterval(fetchWeather, 60000);

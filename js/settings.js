@@ -10,4 +10,5 @@ function livelyPropertyListener(name, val) {
       config.apiData.lon = val;
       break;
   }
+  fetchWeather(true);
 }
