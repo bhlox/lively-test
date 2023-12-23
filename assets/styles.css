@@ -3,8 +3,9 @@ body {
   overflow: hidden;
 }
 video {
-  width: auto;
+  width: 100%;
   height: 100vh;
+  object-fit: fill;
 }
 .fade-out {
   animation: fadeOut ease 2s forwards;
